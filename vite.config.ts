@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/cashier-pro/', // IMPORTANT: Replace 'cashier-pro' with your GitHub repository name
+  // IMPORTANT: This must match your repository name exactly, including capitalization.
+  base: '/Cashier-Pro/',
 })
