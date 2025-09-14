@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cashier Pro</title>
+    <link rel="manifest" href="data:application/json;base64,ewogICJzaG9ydF9uYW1lIjogIkNhc2hpZXIgUHJvIiwKICAibmFtZSI6ICJDYXNoaWVyIFBybyBDaGFuZ2UgQ2FsY3VsYXRvciIsCiAgImRlc2NyaXB0aW9uIjogIkFuIGFwcCB0byBwcmFjdGljZSBjYWxjdWxhdGluZyBjaGFuZ2UgbGlrZSBhIGNhc2hpZXIsIGJ1aWx0IGJ5IEFiZG91bGllIEphbGxvdy4iLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICIvaWNvbnMvaWNvbi0xOTJ4MTkyLnBuZyIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIvaWNvbnMvaWNvbi01MTJ4NTEyLnBuZyIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIgogICAgfQogIF0sCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAidGhlbWVfY29sb3IiOiAiIzJkMzc0OCIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzFhMjAyYyIKfQo=" />
+    <meta name="theme-color" content="#2d3748" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cashier-dark': '#1a202c',
+              'cashier-dark-light': '#2d3748',
+              'cashier-accent': '#4fd1c5',
+              'cashier-accent-hover': '#38b2ac',
+              'cashier-red': '#f56565',
+              'cashier-green': '#48bb78',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.1.5",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/cashier-pro/assets/index-0140d1a1.js"></script>
+</head>
+  <body class="bg-cashier-dark">
+    <div id="root"></div>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
