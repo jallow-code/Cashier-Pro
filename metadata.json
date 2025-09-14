@@ -1,0 +1,5 @@
+{
+  "name": "Cashier Change Calculator",
+  "description": "A web application to practice calculating change using the counting-up method, designed to simulate the fast-paced environment of a supermarket cashier.",
+  "requestFramePermissions": []
+}
